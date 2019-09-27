@@ -32,6 +32,7 @@ This module creates an:
 | instance\_parameters | A list of DB parameter maps to apply to the custom parameter group | list | `<list>` | no |
 | prefix\_name | The prefix for the name of the resources | string | `"my"` | no |
 | replica\_count | The number of reader nodes to create | string | n/a | yes |
+| snapshot\_identifier | DB snapshot to create this database from | string | `""` | no |
 | subnets | The list of subnet IDs to use | list | n/a | yes |
 | username | The master username of the database | string | `"root"` | no |
 | vpc\_id | The ID of the VPC where to place the cluster | string | n/a | yes |
