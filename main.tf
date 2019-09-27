@@ -24,7 +24,10 @@ module "cluster" {
   apply_immediately               = "${var.apply_immediately}"
   database_name                   = "${var.database_name}"
   username                        = "${var.username}"
-  tags                            = "${var.default_tags}"
+
+  snapshot_identifier = "${var.snapshot_identifier}"
+
+  tags = "${var.default_tags}"
 }
 
 module "instance_parameter_group" {
