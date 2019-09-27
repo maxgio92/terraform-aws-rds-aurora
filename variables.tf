@@ -110,3 +110,8 @@ variable "default_tags" {
     Terraform = "true"
   }
 }
+
+variable "snapshot_identifier" {
+  description = "DB snapshot to create this database from"
+  default     = ""
+}
